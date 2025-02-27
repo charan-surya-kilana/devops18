@@ -3,7 +3,7 @@ resource "aws_launch_template" "web_server_as" {
     image_id           = "ami-02a53b0d62d37a757"
     vpc_security_group_ids = [aws_security_group.web_server.id]
     instance_type = "t2.micro"
-    key_name = "feb"
+    key_name = "Feb"
     tags = {
         Name = "DevOps"
     }
